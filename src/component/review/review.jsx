@@ -69,7 +69,7 @@ const ReviewsSection = () => {
 
   return (
     <section id="reviews">
-      <div class="line-flex"><div class="line"></div><h2 class="">Reviews</h2><div class="line"></div></div>
+      <div class="line-flex"><div class="line"></div><h2 class="">REVIEWS</h2><div class="line"></div></div>
       <Carousel>
         {reviews.map((review, index) => (
           <Carousel.Item key={index}>

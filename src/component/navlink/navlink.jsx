@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navlink.css';
-import icon from './logo kwinbee.png';
+import icon from './final kwinbee.png';
 import hamburgerIcon from './icons8-hamburger-24 (1).png'; // Ensure this path is correct
 
 const Navbar = () => {

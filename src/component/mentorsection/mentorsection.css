@@ -102,6 +102,7 @@ text-align: center;
 
 
 .whycontainer {
+    background-color: #f6f6f6;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; /* Center the items horizontally */
@@ -109,17 +110,23 @@ text-align: center;
 }
 
 .whycard {
-    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    background-color: white;
     margin: 20px;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    box-shadow: 0 5px 10px #521d02;
     border-radius: 5px;
-    backdrop-filter: blur(15px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whycard:hover {
+    background-color: #fcab26; /* Change background color on hover */
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .whycard img {

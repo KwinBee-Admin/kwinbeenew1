@@ -9,7 +9,7 @@ import WHATSAPP from './whatsapp-400.png';
 const CourseSection = () => {
     return (
         <section id="packages123">
-            <div class="line-flex"><div class="line"></div><h2 class="">Course Quests</h2><div class="line"></div></div>
+            <div class="line-flex"><div class="line"></div><h2 class="">COURSE QUESTS</h2><div class="line"></div></div>
             <div className="package-container123">
                 {/* Pawn Package */}
                 <div className="package-card123">

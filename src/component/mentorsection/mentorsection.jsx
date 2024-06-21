@@ -12,7 +12,7 @@ const MentorSection = () => {
       <section id="ceo">
         <div className="line-flex">
           <div className="line"></div>
-          <h2 className="">Know Your Mentor</h2>
+          <h2 className="">KNOW YOUR MENTOR</h2>
           <div className="line"></div>
         </div>
         <div className="ceo-card">
@@ -63,7 +63,7 @@ const MentorSection = () => {
       <section id="whywe">
         <div className="line-flex">
           <div className="line"></div>
-          <h2 className="">Why KwinBee?</h2>
+          <h2 className="">WHY KWINBEE?</h2>
           <div className="line"></div>
         </div>
         <div className="whycontainer">

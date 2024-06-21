@@ -26,7 +26,7 @@ const AchieversSection = () => {
         <section id="achievers">
             <div className="line-flex">
         <div className="line"></div>
-        <h2 className="">Our Students</h2>
+        <h2 className="">OUR STUDENTS</h2>
         <div className="line"></div>
       </div>
             <div className="grid-wrapper">
