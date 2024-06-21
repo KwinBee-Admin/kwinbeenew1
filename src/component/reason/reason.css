@@ -1,0 +1,92 @@
+/* Add your existing styles here */
+
+/* Styles for the new reason cards section */
+#reasons-section {
+    background-image: url(#pawnbg);
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
+}
+
+.line-flex {
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+}
+.line-flex .line{
+    height: 10px;
+    width: 100%;
+    background-color: #ffbe56;
+}
+#reasons-section h2 {
+    color: #521d02;
+    margin-top: 6px;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    align-self: flex-start;
+}
+
+/* Container for reason cards */
+.reason {
+    margin-top: 25px;
+    display: flex;
+    background-color: #f6f6f6;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    justify-content: center; /* Center the items horizontally */
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* Individual reason card */
+.reason-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff; /* Transparent white with opacity */
+    border-radius: 15px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 5px #ffbe56;
+    width: calc(20% - 20px); /* Flex-basis for equal sizing and spacing */
+    height: 200px; /* Fixed height */
+    margin: 10px; /* Spacing between cards */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+.reason-card:hover {
+    background-color: #fcab26; /* Change background color on hover */
+    transform: translateY(-10px); /* Lift the card upwards */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+.reason-card img {
+    width: 64px; /* Adjust logo width as needed */
+    height: 64px; /* Adjust logo height as needed */
+    margin-bottom: 10px;
+}
+
+.reason-card h3 {
+    color: #521d02; /* Your desired text color */
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 1290px) {
+    .reason {
+        align-items: center;
+        align-content: center;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust column width for smaller screens */
+        grid-gap: auto;
+        padding-right: 35px;
+        width: 100%; /* Adjust the gap between items */
+    }
+
+    .reason-card {
+        grid-column: span 2;
+        width: 90%; /* Adjust card width for smaller screens */
+    }
+}

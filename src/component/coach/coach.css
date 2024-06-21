@@ -1,0 +1,72 @@
+/* src/component/coach/coach.css */
+
+.coach-container {
+    padding: 80px;
+    text-align: center;
+  }
+  
+  .coach-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .coach-grid {
+    display: grid;
+    padding: 60px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 90px;
+  }
+  
+  .coach-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .coach-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    color: white;
+    text-align: left;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .card-details {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .card-details p {
+    margin: 5px 0;
+    color: #888;
+  }
+  
+  .card-details span {
+    font-size: 0.9em;
+    color: #bbb;
+  }
+  

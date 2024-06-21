@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+#introduction {
+    z-index: 1;
+    position: relative;
+    min-height: 70vh;
+    background-color: #fcab26;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    color: #fff;
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    padding: 20px;
+}
+
+.poppins-bold-italic {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+#introduction .intro-text {
+    z-index: 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#introduction .intro-text h1 {
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+#introduction p {
+    font-size: 1.4em; 
+    font-weight: regular;
+}
+
+.stat {
+    background-color: #f6f6f6;
+
+    /* backdrop-filter: blur(45px); */
+    z-index: 2;
+    /* background-color: rgba(0, 0, 0, 0.7);
+    border: 3px solid rgba(255, 255, 255, 0.9); */
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    /* border-radius: 25px; */
+    /* box-shadow: 0 5px 10px #521d02; */
+    transition: transform 0.3s ease;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.animated-number {
+    -webkit-text-stroke-width: 2px;
+    
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 96px;
+    /* color: white; */
+  
+ 
+}
+
+.stat-item p {
+    margin-top:-15px;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+#chesspiece {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.empbox {
+    height: 200px;
+    width: 100%;
+    max-width: 920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.loader {
+    border: 7px solid #f3f3f3;
+    border-top: 7px solid #040607;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.empbox p {
+    position: absolute;
+    top: 60%;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.bookme {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.bookme h1 {
+    font-size: 2.5em;
+}
+.refer{
+    font-size: 2px;
+}
+
+.bookme p {
+    font-size: 1em;
+}
+
+.bookme-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.bookme-button a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #introduction {
+        padding: 10px;
+    }
+
+    #introduction .intro-text h1 {
+        font-size: 1.5em;
+    }
+
+    #introduction p {
+        font-size: 1em;
+    }
+
+    .stat {
+        flex-direction: column;
+    }
+
+    .animated-number {
+        font-size: 36px;
+    }
+
+    #herocol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .empbox {
+        width: 100%;
+    }
+
+    .bookme {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-text h1 {
+        font-size: 1.2em;
+    }
+
+    .intro-text p {
+        font-size: 0.9em;
+    }
+
+    .bookme h1 {
+        font-size: 1em;
+    }
+
+    .bookme p {
+        font-size: 0.8em;
+    }
+
+    .bookme-button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .stat-item p {
+        font-size: 0.8rem;
+    }
+
+    .empbox {
+        height: 150px;
+    }
+
+    .loader {
+        width: 40px;
+        height: 40px;
+    }
+
+    .empbox p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,137 @@
+.blog-card {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin: 16px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #efeeec;
+  color: #000;
+  width: 80%;
+  position: relative;
+  padding: 10px;
+  height: 400px;
+}
+
+/* Container for the blog cards to center-align them */
+.blog-card-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.blog-image {
+  width: 38%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.blog-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  height: 100%;
+  text-align: left;
+  width: 50%;
+}
+
+.blog-content h2 {
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 2rem;
+  color: #c07702;
+}
+
+.blog-content p {
+  margin: 12px 0 0;
+  font-size: 1.2rem;
+  color: #333;
+  flex-grow: 1;
+}
+
+.blogpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+  overflow-y: auto;
+}
+
+.read-more-button {
+  align-self: flex-end;
+  margin-top: 16px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #fcab26;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.read-more-button:hover {
+  background-color: #e39e1c;
+}
+
+/* Right-aligned blog card */
+.blog-card-right {
+  flex-direction: row-reverse;
+}
+
+.blog-card-right .read-more-button {
+  align-self: flex-start; /* Align button to the left side */
+}
+/* component/blogpost/blogpost.css */
+.readmore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+  overflow-y: auto;
+}
+
+.blogpost-container {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border: 1px solid #c07702;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blogpost-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.blogpost-title {
+  color: #c07702;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.blogpost-title:hover {
+  color: #a55b02;
+}
+
+.blogpost-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border: 2px solid #c07702;
+  border-radius: 5px;
+}
+
+.blogpost-description {
+  color: black;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: justify;
+}

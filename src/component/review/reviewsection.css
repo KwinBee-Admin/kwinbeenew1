@@ -1,0 +1,94 @@
+#reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+    padding: 20px;
+    color: #422110;
+  }
+  
+  #reviews h2 {
+    color: #521d02;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    align-self: flex-start;
+}
+  
+  #mycarousel {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel-inner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .carousel-item {
+    max-width: 75%;
+    padding: 10px;
+    position: relative;
+    border-radius: 15px;
+    margin: 0 auto 20px;
+    backdrop-filter: blur(15px);
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 10px #521d02;
+    transition: transform 0.3s ease;
+  }
+  
+  .review-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+  }
+  
+  .review-card-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .review-card-digit {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fcab26; /* Yellow */
+    margin-right: 5px;
+  }
+  
+  .star-rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .review-card-star {
+    font-size: 1.2em;
+    padding-right: 40px;
+    color: #fcab26; /* Yellow */
+  }
+  
+  .review-card-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .review-card-content .initials {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fcab26; /* Yellow background */
+    color: #422110; /* Brown text color */
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .review-card-content p {
+    max-width: 80%;
+    padding-left: 20px;
+    font-size: 1em;
+  }
+  

@@ -1,0 +1,204 @@
+#packages123 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.line-flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+   align-items: center;
+}
+.line-flex .line{
+    height: 10px;
+    width: 100%;
+    background-color: #ffbe56;
+}
+#packages123 h2{
+    color:#521d02;
+    margin-top: 6px;
+    font-size: 50px;
+  width: 100%;
+text-align: center; 
+    align-self: flex-start;
+}
+.package-container123 {
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#packlink {
+    text-decoration: none;
+}
+
+.courseimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.package-card123 {
+    backdrop-filter: blur(15px);
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+
+.package-card123 .linkh {
+    text-decoration: none;
+    color: #fcab26;
+}
+
+.package-card123 .linkh:hover {
+    color: #fcab26;
+    text-shadow: #fcab26 9px 0 20px;
+}
+
+/* Image styles */
+.package-card123 img {
+    width: 20%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+
+/* Hover effect to pop out image */
+.package-card123:hover img {
+    transform: scale(1.2); /* Scale image to 120% */
+}
+
+/* Optional: Enhance card hover effect */
+
+.package-info123 h3 {
+    color: #fcab26;
+}
+
+.package-info123 .bullet-points123 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.package-info123 .bullet-points123 li {
+    position: relative;
+    padding-left: 1.5em;
+    color: #521d02;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.package-info123 .bullet-points123 li:before {
+    content: '\2658'; /* Unicode for chess knight */
+    position: absolute;
+    left: 0;
+    color: #521d02;
+}
+
+.packcon {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mailbutt {
+    height: 50px;
+    width: 145px;
+    margin-left: 0;
+    background-color: #fcab26;
+    border-radius: 15px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.whatbutt {
+    height: 50px;
+    width: 145px;
+    margin-right: 0;
+    background-color: #fcab26;
+    border-radius: 15px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.packcon img {
+    padding-top: 5px;
+    height: 30px;
+    width: 30px;
+}
+
+.packwh {
+    text-decoration: none;
+}
+
+.packmail {
+    text-decoration: none;
+}
+
+.whatbutt h6 {
+    margin-left: 2px;
+    color: #521d02;
+}
+
+.mailbutt h6 {
+    color: #521d02;
+}
+
+/* Hover effect for mail and WhatsApp buttons */
+.mailbutt:hover,
+.whatbutt:hover {
+    transform: translateY(-5px); /* Slight upward movement on hover */
+}
+
+@media (max-width: 768px) {
+    #packages123 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package-container123 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package-card123 {
+        margin-top: 20px;
+        width: 90%; /* Take full width on smaller screens */
+        margin: 5px 0; /* Adjust margin for spacing */
+    }
+
+    .package-card123 img {
+        transition: transform 0.2s ease, box-shadow 0.2s ease; /* Faster transition on smaller screens */
+    }
+
+    .package-card123:hover img {
+        transform: scale(1.1); /* Slightly smaller scale on smaller screens */
+    }
+
+    .mailbutt, .whatbutt {
+        margin-top: 5px;
+        max-width: 125px;
+    }
+}

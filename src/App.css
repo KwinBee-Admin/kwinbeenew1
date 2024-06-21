@@ -1,0 +1,204 @@
+
+
+
+
+/* Introduction Section Styles */
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-weight: 1000;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+}
+.h1, h1 {
+  font-size: calc(1.2rem + 1.2vw);
+}
+
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  
+}
+
+#overlay img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.09; /* Adjust the opacity to control the image transparency */
+}
+
+
+
+
+/* Typing animation keyframes (no change needed unless you want to adjust the typing speed or effect) */
+#herocol{
+  margin-top: 55px;
+display: flex;
+z-index: 25;
+justify-content: space-evenly;
+  width: 90%;
+  }
+
+
+.animated-image {
+opacity: 0; /* Start with the image hidden */
+animation: rotateEntry 2s ease-in-out forwards; /* Apply the rotation animation */
+}
+
+@keyframes rotateEntry {
+0% {
+  transform: translateX(0) rotate(180deg) translateY(100px); /* Start position off-screen */
+  opacity: 0; /* Start with opacity 0 */
+}
+100% {
+  transform: translateX(0) rotate(0) translateY(0); /* End position in view */
+  opacity: 1; /* Fade in */
+}
+}
+.intro-text h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+   color: white;
+}
+.bookme{
+  text-align: right;
+  padding-right: 12px;
+  border-right: 8px solid white;
+  white-space: nowrap;
+  
+}
+.bookme h1 {
+  margin-bottom: 37px; /* Add margin-bottom to create space between lines */
+}
+
+.bookme p {
+  margin-bottom: 37px; /* Add margin-bottom to create space between lines */
+}
+
+
+
+/* Floating Contact Button Styles */
+.bookme-button {
+  text-align: center;
+  background-color: #000; /* Yellow */
+  color: #fff; /* Brown */
+  border: 3px solid #fff;
+  padding: 15px 30px; /* Adjust padding to fit text snugly */
+  filter: brightness(110%);
+  border-radius: 10px;
+  display: inline-block; /* Change to inline-block to fit content */
+  opacity: 1.0;
+  align-items: center;
+  z-index: 5;
+}
+
+
+.bookme-button a {
+  color: #fff; /* Brown */
+  text-decoration:none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+/* Packages Section Styles */
+
+
+
+/* Learners Achievers Section Styles */
+
+
+
+
+
+/* Social Media Links Section Styles */
+
+/* Contact Us Section Styles */
+
+
+
+.footer-section {
+  max-width: 220px;
+  margin: 10px; /* Add some margin between sections */
+}
+
+.footer-section img{
+  height: 20px;
+  width: 20px;
+}
+
+.footer-section h3 {
+  color: #422110; /* Accent color: Brown */
+}
+
+.footer-section p {
+  color: #555; /* Secondary accent color: Dark Green */
+  font-size: 14px; /* Adjust font size for smaller screens */
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 5px;
+  
+}
+.footer-section a {
+  text-decoration: none;
+  color: #422110; /* Accent color: Brown */
+}
+
+.footer-section a:hover {
+  color: #b60000; /* Call-to-action color: Red */
+}
+
+/* Mobile-first responsive design */
+
+/* src/component/FixedButton.css */
+
+.contact-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fcab26; /* Yellow */
+  color: #422110; /* Brown */
+  border: 3px solid #521d02;
+  padding:4px;
+  padding: 10px;
+  filter: brightness(110%);
+  border-radius: 10px;
+  display: none;
+  opacity: 1.0;
+  align-items: center;
+  z-index: 5;
+}
+
+.contact-button a {
+  color: #422110; /* Brown */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.contact-button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+
+
+/* Mobile Styles */

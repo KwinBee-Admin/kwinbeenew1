@@ -1,0 +1,59 @@
+.student-container {
+    padding: 80px;
+    text-align: center;
+}
+  
+.student-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+  
+.student-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust gap as needed */
+    padding: 20px;
+}
+  
+.student-image-container {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px; /* Adjust margin as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.student-image-container img {
+    max-width: 450px; /* Adjust maximum width as needed */
+    max-height: 230px; /* Adjust maximum height as needed */
+    display: block;
+}
+
+/* Set the height of .student-image-container to match the intrinsic height of the image */
+
+  
+.student-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    color: white;
+    text-align: left;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+  
+.student-image-container:hover .student-overlay {
+    opacity: 1;
+}
+  
+.student-overlay h3 {
+    margin: 0;
+    font-size: 1.2em;
+}

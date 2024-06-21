@@ -1,0 +1,144 @@
+/* About the CEO Section Styles */
+.line-flex {
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+}
+.line-flex .line{
+    height: 10px;
+    width: 100%;
+    background-color: #ffbe56;
+}
+#ceo h2{
+    color:#521d02;
+    margin-top: 6px;
+    font-size: 50px;
+  width: 100%;
+text-align: center; 
+    align-self: flex-start;
+}
+#whywe h2{
+    color:#521d02;
+    font-size: 50px;
+  width: 100%;
+text-align: center; 
+    align-self: flex-start;
+}
+#ceo {
+    padding: 20px;
+    background-color: #f6f6f6; /* Updated to light gray */
+    
+}
+ 
+/* Styles for CEO Card */
+.ceo-card {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+   background-color: white;
+    backdrop-filter:blur(15px);
+    
+    width: 85%;
+    /*border: 5px solid #fcab26;*/
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 5px solid rgba(255,255,255,0.1);
+    transition: transform 0.3s ease;
+}
+
+
+
+.ceo-image img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+    /*border: 5px solid #fcab26;*/
+}
+
+.ceo-info {
+    color: #521d02;
+    flex: 1;
+}
+
+.ceo-info a {
+    color: #fcab26;
+    text-decoration: none;
+}
+
+.ceo-info a:hover{
+    
+    text-shadow: 0 5px 20px #fcab26;
+}
+
+.ceo-info h3 {
+    color: #fcab26; /* Primary color: Dark Yellow/Golden */
+}
+
+.ceo-info p {
+    color: #521d02; /* Secondary accent color: Dark Green */
+}
+
+@media (max-width: 768px){
+    #ceo {
+        text-align: center;
+    }
+.ceo-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ceo-image img {
+        margin-bottom: 10px;
+    }
+    
+}
+#whywe {
+    padding: 20px;
+}
+
+
+.whycontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+}
+
+.whycard {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0 5px 10px #521d02;
+    border-radius: 5px;
+    backdrop-filter: blur(15px);
+}
+
+.whycard img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.whyres {
+    padding-top: 20px;
+    color: #521d02;
+    font-size: 1.2em;
+    
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .whycontainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

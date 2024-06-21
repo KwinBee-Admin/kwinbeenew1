@@ -1,0 +1,133 @@
+/* General Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+    color: #fff; /* White text */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    height: 55px;
+    font-family: "Arial", sans-serif; /* Updated font-family for the header */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-family: "Arial", sans-serif; /* Updated font-family for the navigation links */
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #fcab26;
+    text-shadow: #a85d38 1px 2px 5px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+  }
+  
+  .logo .poppins {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .logo img {
+    height: 40px; /* Set the desired height for the logo */
+  }
+  
+  .toggle-button {
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+    background: none;
+    border: none;
+    padding: 5px;
+  }
+  
+  .toggle-button img {
+    height: 25px; /* Adjust the height as needed */
+  }
+  
+  .dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1001; /* Ensure it is above other content */
+  }
+  
+  .dropdown_menu.open {
+    display: block;
+  }
+  
+  .dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dropdown_menu a {
+    color: #521d02;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .dropdown_menu a:hover {
+    color: #fcab26;
+    text-shadow: #a85d38 1px 2px 5px;
+  }
+  
+  /* Define hover colors for different scroll positions */
+  .hover-color1:hover {
+    color: #fcab26; /* Color for scroll position 1 */
+  }
+  
+  .hover-color2:hover {
+    color: #521d02; /* Color for scroll position 2 */
+  }
+  
+  @media (max-width: 926px) {
+    .nav-links {
+      display: none;
+    }
+    .toggle-button {
+      display: block;
+    }
+    .dropdown_menu {
+      display: none;
+    }
+    .dropdown_menu.open {
+      display: block;
+    }
+  }
+  
