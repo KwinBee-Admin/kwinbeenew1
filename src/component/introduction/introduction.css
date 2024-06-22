@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: center; /* Center text */
+    text-align: start;
     overflow: hidden;
     white-space: nowrap;
 }
@@ -34,13 +34,11 @@
 #introduction .intro-text h1 {
     font-size: 3em;
     margin: 10px 0;
-    color: white; /* Ensures the header text is white */
 }
 
 #introduction p {
     font-size: 1.4em; 
     font-weight: regular;
-    color: white; /* Ensures the paragraph text is white */
 }
 
 .stat {
@@ -108,14 +106,11 @@ canvas {
 }
 
 .bookme {
-    text-align: center; /* Center text */
+    text-align: right;
     padding-right: 12px;
     border-right: 8px solid white;
     white-space: nowrap;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center align items */
-  }
+}
 
 .bookme h1 {
     margin-bottom: 37px; /* Add margin-bottom to create space between lines */
@@ -138,12 +133,12 @@ canvas {
     opacity: 1.0;
     align-items: center;
     z-index: 5;
-    margin-top: 130px;
+    margin-top: 150px;
 }
 
 .bookme-button a {
     color: #fff; /* Brown */
-    text-decoration:none;
+    text-decoration: none;
     display: flex;
     align-items: center;
     text-align: center;
@@ -192,8 +187,6 @@ canvas {
 @media (max-width: 768px) {
     #introduction {
         padding: 10px;
-        text-align: center; /* Center content */
-        align-items: center; /* Center items */
     }
 
     #introduction .intro-text h1 {
@@ -206,7 +199,7 @@ canvas {
 
     .stat {
         flex-direction: column;
-        align-items: center; /* Center items */
+        align-items: center; /* Center stat items */
     }
 
     .animated-number {
@@ -216,32 +209,41 @@ canvas {
     #herocol {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center; /* Center text */
+        align-items: center; /* Center hero content */
+        text-align: center; /* Center text in hero */
     }
 
     .empbox {
         width: 100%;
+        justify-content: center; /* Center loader */
     }
 
     .bookme {
         margin-top: 20px;
-        text-align: center; /* Center text */
-        align-items: center; /* Center items */
+        text-align: center; /* Center book me section */
     }
 
     .bookme-button {
-        margin-top: 20px; /* Adjust margin for mobile view */
+        align-self: center; /* Center the button */
     }
 }
 
 @media (max-width: 480px) {
+    #introduction .intro-text {
+        align-items: center; /* Center the intro text */
+        text-align: center; /* Center the text */
+    }
+
     .intro-text h1 {
         font-size: 1.2em;
     }
 
     .intro-text p {
         font-size: 0.9em;
+    }
+
+    .bookme {
+        text-align: center; /* Center the book me section */
     }
 
     .bookme h1 {
@@ -255,6 +257,11 @@ canvas {
     .bookme-button {
         padding: 8px 16px;
         font-size: 0.9em;
+        align-self: center; /* Center the button */
+    }
+
+    .stat {
+        align-items: center; /* Center stat items */
     }
 
     .stat-item p {
@@ -263,6 +270,7 @@ canvas {
 
     .empbox {
         height: 150px;
+        justify-content: center; /* Center loader */
     }
 
     .loader {
