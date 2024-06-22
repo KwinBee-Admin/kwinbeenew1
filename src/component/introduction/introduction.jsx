@@ -80,11 +80,9 @@ const Introduction = () => {
               Book A FREE <br />
               DEMO NOW
             </h1>
-            <br />
             <p className="refer">
               AND <strong>REFER</strong> TO GET <strong>DISCOUNT</strong>
             </p>
-            <br />
             <div className="bookme-button" onClick={redirectToWebsite}>
               <a
                 href="https://wa.link/weua1t"

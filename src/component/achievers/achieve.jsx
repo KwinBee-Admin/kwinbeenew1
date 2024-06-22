@@ -9,10 +9,10 @@ import student2 from './students/16.jpg';
 import student3 from './students/6.jpg';
 
 const students = [
-    { id: 'student0', img: student0, name: 'Student Name 0', description: 'This is student 0 description.' },
-    { id: 'student1', img: student1, name: 'Student Name 1', description: 'This is student 1 description.' },
-    { id: 'student2', img: student2, name: 'Student Name 2', description: 'This is student 2 description.' },
-    { id: 'student3', img: student3, name: 'Student Name 3', description: 'This is student 3 description.' },
+    { id: 'student0', img: student0, name: 'Shoaib'},
+    { id: 'student1', img: student1, name: 'Alex'},
+    { id: 'student2', img: student2, name: 'Alex'},
+    { id: 'student3', img: student3, name: 'Shoaib'},
 ];
 
 const AchieversSection = () => {

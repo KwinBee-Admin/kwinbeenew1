@@ -65,48 +65,6 @@ animation: rotateEntry 2s ease-in-out forwards; /* Apply the rotation animation 
   margin-bottom: 10px;
    color: white;
 }
-.bookme{
-  text-align: right;
-  padding-right: 12px;
-  border-right: 8px solid white;
-  white-space: nowrap;
-  
-}
-.bookme h1 {
-  margin-bottom: 37px; /* Add margin-bottom to create space between lines */
-}
-
-.bookme p {
-  margin-bottom: 37px; /* Add margin-bottom to create space between lines */
-}
-
-
-
-/* Floating Contact Button Styles */
-.bookme-button {
-  text-align: center;
-  background-color: #000; /* Yellow */
-  color: #fff; /* Brown */
-  border: 3px solid #fff;
-  padding: 15px 30px; /* Adjust padding to fit text snugly */
-  filter: brightness(110%);
-  border-radius: 10px;
-  display: inline-block; /* Change to inline-block to fit content */
-  opacity: 1.0;
-  align-items: center;
-  z-index: 5;
-}
-
-
-.bookme-button a {
-  color: #fff; /* Brown */
-  text-decoration:none;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-
 
 @keyframes typing {
   from { width: 0; }

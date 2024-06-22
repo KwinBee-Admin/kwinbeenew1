@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: start;
+    text-align: center; /* Center text */
     overflow: hidden;
     white-space: nowrap;
 }
@@ -34,47 +34,41 @@
 #introduction .intro-text h1 {
     font-size: 3em;
     margin: 10px 0;
+    color: white; /* Ensures the header text is white */
 }
 
 #introduction p {
     font-size: 1.4em; 
     font-weight: regular;
+    color: white; /* Ensures the paragraph text is white */
 }
 
 .stat {
-
-    /* backdrop-filter: blur(45px); */
+    background-color: #040607;
     z-index: 2;
-    
-    /* background-color: rgba(0, 0, 0, 0.7);
-    border: 3px solid rgba(255, 255, 255, 0.9); */
     padding: 20px;
     width: 100%;
     text-align: center;
-    /* border-radius: 25px; */
-    /* box-shadow: 0 5px 10px #521d02; */
-    transition: transform 0.3s ease;
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    z-index: 1000;
 }
 
 .animated-number {
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;  /* Outline width */
+    -webkit-text-stroke-color: black; /* Outline color */
+    -webkit-text-fill-color: white; /* Fill color */
     font-weight: bold;
     font-size: 96px;
-    color: rgb(0, 0, 0); 
-  
- 
+    color: white; /* Backup color for older browsers */
 }
 
 .stat-item p {
-    color: rgb(0, 0, 0);
-    margin-top:-15px;
+    color: white; /* Changes the label text color to white */
+    margin-top: -15px;
     font-size: 2rem;
     font-weight: 800;
 }
@@ -113,6 +107,48 @@ canvas {
     transform: translateY(-50%);
 }
 
+.bookme {
+    text-align: center; /* Center text */
+    padding-right: 12px;
+    border-right: 8px solid white;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+  }
+
+.bookme h1 {
+    margin-bottom: 37px; /* Add margin-bottom to create space between lines */
+}
+
+.bookme p {
+    margin-bottom: 37px; /* Add margin-bottom to create space between lines */
+}
+
+/* Floating Contact Button Styles */
+.bookme-button {
+    text-align: center;
+    background-color: #000; /* Yellow */
+    color: #fff; /* Brown */
+    border: 3px solid #fff;
+    padding: 15px 30px; /* Adjust padding to fit text snugly */
+    filter: brightness(110%);
+    border-radius: 10px;
+    display: inline-block; /* Change to inline-block to fit content */
+    opacity: 1.0;
+    align-items: center;
+    z-index: 5;
+    margin-top: 130px;
+}
+
+.bookme-button a {
+    color: #fff; /* Brown */
+    text-decoration:none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -126,24 +162,20 @@ canvas {
     font-weight: bold;
 }
 
-.bookme {
-    text-align: right;
-    margin-top: 20px;
-}
-
 .bookme h1 {
     font-size: 2.5em;
-}
-.refer{
-    font-size: 2px;
+    color: white; /* Ensures the header text in the book section is white */
+    margin-bottom: 10px;
 }
 
-.bookme p {
-    font-size: 1em;
+.refer {
+    font-size: 1.5em; /* Adjusted for visibility */
+    color: white; /* Ensures the paragraph text in the book section is white */
+    margin-bottom: 20px;
 }
 
 .bookme-button {
-    margin-top: 10px;
+    align-self: flex-end; /* Align the button to the bottom */
     padding: 10px 20px;
     background-color: black;
     border: 2px solid white;
@@ -160,6 +192,8 @@ canvas {
 @media (max-width: 768px) {
     #introduction {
         padding: 10px;
+        text-align: center; /* Center content */
+        align-items: center; /* Center items */
     }
 
     #introduction .intro-text h1 {
@@ -172,6 +206,7 @@ canvas {
 
     .stat {
         flex-direction: column;
+        align-items: center; /* Center items */
     }
 
     .animated-number {
@@ -182,6 +217,7 @@ canvas {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center; /* Center text */
     }
 
     .empbox {
@@ -190,6 +226,12 @@ canvas {
 
     .bookme {
         margin-top: 20px;
+        text-align: center; /* Center text */
+        align-items: center; /* Center items */
+    }
+
+    .bookme-button {
+        margin-top: 20px; /* Adjust margin for mobile view */
     }
 }
 
