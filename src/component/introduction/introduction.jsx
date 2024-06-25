@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./introduction.css";
 import { useSpring, animated } from "react-spring";
-import Scene from "./chesspices"; // Ensure the path is correct
 import backimage from "./chesstransback.png";
 
 const Counter = ({ number, onAnimationEnd }) => {
@@ -61,19 +60,11 @@ const Introduction = () => {
               Every Pawn Has <br /> the Potential To
               <br /> Be A Queen.
             </h1>
-            <p>
+            <p className="firstpara" style={{marginTop:'80px'}}>
               Kwinbee, the chess world’s wake up
               <br /> call rooster, Brings you the best chess tutor!
             </p>
           </div>
-
-          {!animationComplete ? (
-            <div className="empbox">
-              <div className="loader"></div>
-            </div>
-          ) : (
-            <Scene mousePosition={mousePosition} />
-          )}
 
           <div className="bookme poppins-bold-italic">
             <h1>
