@@ -32,19 +32,6 @@
   opacity: 0.09; /* Adjust the opacity to control the image transparency */
 }
 
-
-
-
-/* Typing animation keyframes (no change needed unless you want to adjust the typing speed or effect) */
-#herocol{
-  margin-top: 55px;
-display: flex;
-z-index: 25;
-justify-content: space-evenly;
-  width: 90%;
-  }
-
-
 .animated-image {
 opacity: 0; /* Start with the image hidden */
 animation: rotateEntry 2s ease-in-out forwards; /* Apply the rotation animation */
