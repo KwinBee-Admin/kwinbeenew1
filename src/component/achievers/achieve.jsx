@@ -36,7 +36,6 @@ const AchieversSection = () => {
                             <img src={student.img} alt={student.name} />
                         </div>
                         <div className="student-info">
-                            <h3>{student.name}</h3>
                             <p>{student.description}</p>
                         </div>
                     </div>
