@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./introduction.css";
 import { useSpring, animated } from "react-spring";
-import backimage from "./chesstransback.png";
+
 
 const Counter = ({ number, onAnimationEnd }) => {
   const props = useSpring({
@@ -20,12 +20,6 @@ const Counter = ({ number, onAnimationEnd }) => {
 
 const Introduction = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [animationComplete, setAnimationComplete] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   const redirectToWebsite = () => {
     window.location.href = "https://wa.link/weua1t";
@@ -34,22 +28,6 @@ const Introduction = () => {
   const [students, setStudents] = useState(4000);
   const [mentors, setMentors] = useState(50);
   const [yearsOfExperience, setYearsOfExperience] = useState(10);
-
-  useEffect(() => {
-    const handleMouseMove = (event) => {
-      setMousePosition({ x: event.clientX, y: event.clientY });
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
-
-  const handleAnimationEnd = () => {
-    setAnimationComplete(true);
-  };
 
   return (
     <main>
@@ -87,22 +65,21 @@ const Introduction = () => {
         </div>
 
         <div id="overlay">
-          <img src={backimage} alt="Background" />
+        <img src="/chesstransback.png" alt="Background" />
         </div>
       </section>
       <div className="stat" id="stats">
         <div className="stat-item">
-          <Counter number={students} onAnimationEnd={handleAnimationEnd} />
+          <Counter number={students} />
           <p>Students</p>
         </div>
         <div className="stat-item">
-          <Counter number={mentors} onAnimationEnd={handleAnimationEnd} />
+          <Counter number={mentors} />
           <p>Mentors</p>
         </div>
         <div className="stat-item">
           <Counter
             number={yearsOfExperience}
-            onAnimationEnd={handleAnimationEnd}
           />
           <p>Years of Experience</p>
         </div>

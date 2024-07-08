@@ -5,11 +5,6 @@
     background: #fff;
     overflow-x: auto;
 }
-
-.underlined {
-    position: relative;
-    display: inline-block;
-}
  
 .line-flex {
     margin-top: 50px;
@@ -97,10 +92,6 @@
 .see-more-button .arrow {
     margin-left: 10px;
     transition: transform 0.3s ease;
-}
-
-.see-more-button:hover .arrow {
-    transform: translateX(5px);
 }
 
 /* Adjustments for smaller screens */

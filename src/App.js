@@ -10,7 +10,7 @@ import Coach from './component/coach/coach';
 import BlogPost from './component/blog/readmore';
 import MoreStudents from './component/achievers/morestudents';
 import { useInView } from 'react-intersection-observer';
-
+import { useLocation } from 'react-router-dom';
 // Lazy load components
 const ReasonsComponent = lazy(() => import('./component/reason/reason'));
 const CourseSection = lazy(() => import('./component/course/course'));
@@ -92,13 +92,22 @@ function Home() {
     </div>
   );
 }
+function ScrollToTop() {
+  const { pathname } = useLocation();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div>
         <NavLink />
-        <Routes>
+        <Routes scrollRestoration="auto">
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/coach" element={<Coach />} />
