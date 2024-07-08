@@ -10,11 +10,7 @@
     justify-content: space-between;
    align-items: center;
 }
-.line-flex .line{
-    height: 10px;
-    width: 100%;
-    background-color: #ffbe56;
-}
+
 #packages123 h2{
     color:#521d02;
     margin-top: 6px;
@@ -61,11 +57,6 @@ text-align: center;
 .package-card123 .linkh {
     text-decoration: none;
     color: #fcab26;
-}
-
-.package-card123 .linkh:hover {
-    color: #fcab26;
-    text-shadow: #fcab26 9px 0 20px;
 }
 
 /* Image styles */
@@ -168,7 +159,7 @@ text-align: center;
     color: #521d02;
 }
 
-/* Hover effect for mail and WhatsApp buttons */
+
 .mailbutt:hover,
 .whatbutt:hover {
     transform: translateY(-5px); /* Slight upward movement on hover */
