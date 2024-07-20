@@ -123,7 +123,7 @@ function App() {
       <ScrollToTop />
       <div>
         <NavLink />
-        <Routes scrollRestoration="auto">
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/coach" element={<Coach />} />
