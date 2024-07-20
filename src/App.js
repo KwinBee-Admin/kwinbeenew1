@@ -18,7 +18,7 @@ import Blog from './component/blog/blog';
 import Coach from './component/coach/coach';
 import BlogPost from './component/blog/readmore';
 import MoreStudents from './component/achievers/morestudents';
-import WHATSAPP from './component/whatsapp-400.png';
+import WHATSAPP from './component/whatsapp-400.webp'; // Use WebP format for images
 
 // Lazy load components for better performance
 const ReasonsComponent = lazy(() => import('./component/reason/reason'));
