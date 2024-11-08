@@ -19,8 +19,13 @@ const Footer = () => {
             </a>
           </li>
           <li>
+            <a href="https://wa.link/weua1t" target="_blank" rel="noopener noreferrer">
+              <img src={whatsapp} alt="WhatsApp" /> +44 77860 33126
+            </a>
+          </li>
+          <li>
             <a href="mailto:chess@kwinbee.com" target="_blank" rel="noopener noreferrer">
-              <img src={email} alt="Email" /> chess@kwinbee.com
+              <img src={email} alt="Email" /> onlychess64@gmail.com
             </a>
           </li>
         </ul>
