@@ -25,7 +25,7 @@ const coaches = [
   // Add more coach objects as needed
 ];
 
-export default function Coach() {
+{/*export default function Coach() {
   return (
     <div className="coach-container">
       <h1>Our Coaches</h1>
@@ -47,4 +47,4 @@ export default function Coach() {
       </div>
     </div>
   );
-}
+}*/
