@@ -45,7 +45,6 @@ const Navbar = () => {
           <li><a href="#packages123" className={scrollPosition > 1000 ? "hover-color2" : "hover-color1"}>Course Quests</a></li>
           <li><a href="#achievers" className={scrollPosition > 1000 ? "hover-color2" : "hover-color1"}>Gallery</a></li>
           <li><a href="aboutus.html" className={scrollPosition > 1000 ? "hover-color2" : "hover-color1"}>About us</a></li>
-          {/*<li><Link to="/coach" className={scrollPosition > 1000 ? "hover-color2" : "hover-color1"}>Our Coaches</Link></li>*/}
           <li><Link to="/blog" className={scrollPosition > 1000 ? "hover-color2" : "hover-color1"}>Chess Blogs</Link></li>
           <li><a href="#reviews" className={scrollPosition > 1000 ? "hover-color2" : "hover-color1"}>Reviews</a></li>
           <li><a href="contact.html" className={scrollPosition > 1000 ? "hover-color2" : "hover-color1"}>Contact Us</a></li>
@@ -59,7 +58,6 @@ const Navbar = () => {
         <li><a href="#packages123" className={scrollPosition > 1000 ? "hover-color2" : "hover-color1"}>Course Quests</a></li>
         <li><a href="#achievers" className={scrollPosition > 1000 ? "hover-color2" : "hover-color1"}>Gallery</a></li>
         <li><a href="aboutus.html" className={scrollPosition > 1000 ? "hover-color2" : "hover-color1"}>About us</a></li>
-        {/*<li><Link to="/coach" className={scrollPosition > 1000 ? "hover-color2" : "hover-color1"}>Our Coaches</Link></li>*/
         <li><Link to="/blog" className={scrollPosition > 1000 ? "hover-color2" : "hover-color1"}>Chess Blogs</Link></li>
         <li><a href="#reviews" className={scrollPosition > 1000 ? "hover-color2" : "hover-color1"}>Reviews</a></li>
         <li><a href="contact.html" className={scrollPosition > 1000 ? "hover-color2" : "hover-color1"}>Contact Us</a></li>
